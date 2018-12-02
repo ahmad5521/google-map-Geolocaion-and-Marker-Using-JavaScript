@@ -1,11 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "Index";
-}
-
-<br />
 @*page content*@
-
 <div class="wrapper wrapper-content animated fadeIn">
     <div class="row">
         <div class="container">
@@ -233,7 +226,7 @@
 
 
 
-    @Scripts.Render("https://maps.googleapis.com/maps/api/js?key=AIzaSyDKxlJz43-N5DQOA4LVNeK7W17MUwqjnz4")
+    @Scripts.Render("https://maps.googleapis.com/maps/api/js?key=API_KEY")
     <script src="~/Scripts/branches.js"></script>
 
     <script>
@@ -295,26 +288,6 @@
             clearMarkers();
             markers = [];
         }
-
-        //function placeMarkerAndPanTo(latLng, map) {
-            
-
-        //    var marker = new google.maps.Marker({
-        //        position: latLng,
-        //        map: map
-        //    });
-
-
-        //    diag.panTo(latLng);
-
-
-        //    console.log(marker.getPosition());
-
-        //    $("#lititude").val(marker.getPosition().lat());
-        //    $("#longtiod").val(marker.getPosition().lng());
-        //}
-
-        
 
         function getmap() {
             var completeaddress = document.getElementById('txt_location').value;
